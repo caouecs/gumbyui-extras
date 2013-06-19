@@ -1,0 +1,14 @@
+// Tooltip on link
+
+a[title]:hover:after {
+  content: attr(title);
+  padding: 4px 8px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 20px;
+  background: #000;
+  @include border-radius(5px);
+}
