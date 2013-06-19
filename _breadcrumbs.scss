@@ -1,0 +1,28 @@
+// Breadcrumbs
+//
+// Markup:
+// <ul class="breadcrumb"><li>Blabla</li><li>Blabla</li></ul>
+
+$breadcrumb-height: 36px;
+$breadcrumb-border-radius: 4px;
+$breadcrumb-background-color: $default-color;
+
+.breadcrumb {
+  display: block;
+  background: $breadcrumb-background-color;
+  border: 1px solid darken($breadcrumb-background-color, 5%);
+  padding: 0 10px;
+  @include border-radius($breadcrumb-border-radius);
+  @include line-and-height($breadcrumb-height);
+  li {
+    display: table-cell;
+    &:after {
+      content: "\\";
+      padding: 0 10px;
+    }
+    &:last-child:after {
+      content: "";
+      padding: 0;
+    }
+  }
+}

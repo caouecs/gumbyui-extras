@@ -1,0 +1,18 @@
+// Tabs with nav bottom
+//
+// Markup:
+// <div class="tabs tabs-bottom"><div class="tabs-content">Blabla</div><ul class="tab-nav"><li>Link</li></ul></div>
+
+.tabs.tabs-bottom {
+  .tab-nav {
+    border-top: 1px solid darken($default-color, 5%);
+    border-bottom: none;
+    > li {
+      margin-top: -1px;
+      > a {
+        border-width: 0 1px 1px 1px;
+        @include border-radius(0 0 $button-radius $button-radius);
+      }
+    }
+  }
+}

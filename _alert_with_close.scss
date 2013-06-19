@@ -1,0 +1,16 @@
+// Alert with close
+//
+// Markup:
+// <div class="alert primary" id="alert">
+//   <a href="#" gumby-trigger="#alert" class="switch close">&times;</a>
+//     Hello everybody !!!
+// </div>
+
+.alert {
+    &.active {
+        display: none;
+    }
+    .close {
+        float: right;
+    }
+}

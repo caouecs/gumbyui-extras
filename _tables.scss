@@ -1,0 +1,25 @@
+// Tables
+//
+// Add a visible table
+//
+// Markup:
+// <table class="table"></table>
+
+table.table {
+  width: 100%;
+  caption {
+    text-align: center;
+    font-weight: bold;
+  }
+  td {
+    border: 1px solid darken($default-color, 15%);
+    padding: 5px;
+  }
+  th {
+    @extend td;
+
+    text-align: center;
+    font-weight: bold;
+    background: darken($default-color, 5%);
+  } 
+}

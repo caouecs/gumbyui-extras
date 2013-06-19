@@ -1,0 +1,13 @@
+// Colored texts
+//
+// Markup:
+// <span class="text-primary">I have a beautiful color</span>
+
+@each $shade in $ui-coloring {
+    .text-#{nth($shade, 1)} {
+        color: #{nth($shade, 2)};
+    }
+    a.text-#{nth($shade, 1)}:hover {
+        color: #{nth($shade, 3)};
+    }
+}

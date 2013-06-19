@@ -1,0 +1,42 @@
+// Visibility by class
+//
+// when you want to define visibility directly in html
+
+// Desktop
+.visible-desktop {
+  display: inherit !important;
+}
+
+.visible-phone,
+.visible-tablet,
+.hidden-desktop {
+  display: none !important;
+}
+
+// Tablet
+@include respond(tablets) {
+
+  .hidden-desktop,
+  .visible-tablet {
+    display: inherit !important;
+  }
+
+  .visible-desktop,
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+
+/* For Phone */
+@include respond(all-phones) {
+
+  .hidden-desktop,
+  .visible-phone {
+    display: inherit !important;
+  }
+
+  .visible-desktop,
+  .hidden-phone {
+    display: none !important;
+  }
+}
