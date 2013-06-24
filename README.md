@@ -99,6 +99,34 @@ Add `.text-$color` class with $color in the list of $ui-coloring.
 
 ---
 
+## Pagination
+
+Displays pagination. It's compatible with Pagination of Laravel 4.
+
+### Installation
+
+Import `_pagination.scss` file
+
+### Configuration
+
+You can adapt with :
+
+* $pagination-border-radius
+* $pagination-color
+
+### Example
+
+    <div class="pagination">
+        <ul>
+            <li class="disabled"><span>&laquo;</span></li>
+            <li class="active"><span>1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
+
+---
+
 ## Tables
 
 Adds visibility to tables.
