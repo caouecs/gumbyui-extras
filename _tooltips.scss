@@ -1,9 +1,10 @@
-// Tooltip on link
+// Tooltip on link and span
 //
 // Simple tooltip without javascript
 //
 // Markup:
 // <a href="#" gumby-tooltip="What you want">Link</a>
+// <span gumby-tooltip-bottom="Others things">A text</span>
 
 $tooltip-background: #333;
 $tooltip-color: #fff;
@@ -50,5 +51,19 @@ a[gumby-tooltip-bottom] {
   &:hover::before {
     top: 20px;
     border-width: 0 6px 6px 6px;
+  }
+}
+
+
+span {
+  &[gumby-tooltip] {
+    @extend a[gumby-tooltip];
+
+    border-bottom: 1px dashed #cecece;
+  }
+  &[gumby-tooltip-bottom] {
+    @extend a[gumby-tooltip-bottom];
+
+    border-bottom: 1px dashed #cecece;
   }
 }
