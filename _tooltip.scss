@@ -1,0 +1,54 @@
+// Tooltip on link
+//
+// Simple tooltip without javascript
+//
+// Markup:
+// <a href="#" gumby-tooltip="What you want">Link</a>
+
+$tooltip-background: #333;
+$tooltip-color: #fff;
+
+a[gumby-tooltip] {
+  position: relative;
+  cursor: help;
+
+  &:hover::after {
+    content: attr(gumby-tooltip);
+    position: absolute;
+    background: $tooltip-background;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: $tooltip-color;
+    z-index: 90;
+    font-size: .9em;
+    left: 20%;
+    min-width: 200px;
+    bottom: 24px;
+  }
+
+  &:hover::before {
+    border: solid;
+    border-color: $tooltip-background transparent;
+    border-width: 6px 6px 0 6px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+  }
+}
+
+a[gumby-tooltip-bottom] {
+  @extend a[gumby-tooltip];
+
+  &:hover::after {
+    content: attr(gumby-tooltip-bottom);
+    top:24px;
+    bottom: inherit
+  }
+
+  &:hover::before {
+    top: 20px;
+    border-width: 0 6px 6px 6px;
+  }
+}
