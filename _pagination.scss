@@ -13,7 +13,7 @@
 // </div>
 
 $pagination-border-radius: 4px;
-$pagination-color-default: $default-color;
+$pagination-color: $default-color;
 
 .pagination ul {
   display: inline-block;
@@ -27,11 +27,11 @@ $pagination-color-default: $default-color;
       padding: 4px 12px;
       line-height: $base-line-height * .8;
       text-decoration: none;
-      border: 1px solid $pagination-color-default;
+      border: 1px solid $pagination-color;
       border-left-width: 0;
     }
     a:hover, a:focus {
-      background-color: $pagination-color-default;
+      background-color: $pagination-color;
     }
     &:first-child {
       a, span {
@@ -47,14 +47,14 @@ $pagination-color-default: $default-color;
   }
   .active {
     a, span {
-      background-color: $pagination-color-default;
-      color: darken($pagination-color-default, 15%);
+      background-color: $pagination-color;
+      color: darken($pagination-color, 15%);
       cursor: default;
     }
   }
   .disabled {
     span, a, a:hover, a:focus {
-      color: darken($pagination-color-default, 15%);
+      color: darken($pagination-color, 15%);
       background-color: transparent;
       cursor: default;
     }
