@@ -99,6 +99,29 @@ Add `.text-$color` class with $color in the list of $ui-coloring.
 
 ---
 
+## Pager
+
+Displays pager. It's compatible with Pager of Laravel 4.
+
+### Installation
+
+Import `_pager.scss` file
+
+### Configuration
+
+You can adapt with :
+
+* $pager-border-radius
+
+### Example
+
+    <ul class="pager">
+        <li class="previous disabled"><a href="#">&larr; Older</a></li>
+        <li class="next"><a href="#">Newer &rarr;</a></li>
+    </ul>
+
+---
+
 ## Pagination
 
 Displays pagination. It's compatible with Pagination of Laravel 4.

@@ -1,0 +1,47 @@
+// Pager
+//
+// based on Twitter Bootstrap for Laravel 4
+//
+// Markup:
+// <ul class="pager"><li><a href="#">Previous</a></li><li><a href="#">Next</a></li></ul>
+
+$pager-border-radius = 10px;
+
+.pager {
+  list-style: none;
+  text-align: center;
+  @include clearfix();
+
+  li {
+    display: inline;
+
+    a, span {
+      display: inline-block;
+      padding: 5px 14px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      @include border-radius($pager-border-radius);
+    }
+    a:hover, a:focus {
+      text-decoration: none;
+      background-color: #f5f5f5;
+    }
+  }
+  .next {
+    a, span {
+      float: right;
+    }
+  }
+  .previous {
+    a, span {
+      float: left;
+    }
+  }
+  .disabled {
+    a, a:hover, a:focus, span {
+      color: darken($default-color, 5%);
+      background-color: #fff;
+      cursor: default;
+    }
+  }
+}
