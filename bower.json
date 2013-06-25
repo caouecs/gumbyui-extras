@@ -1,11 +1,12 @@
 {
   "name": "gumbyui-extras",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": [
     "_alert_with_close.scss",
     "_breadcrumbs.scss",
     "_colored_texts.scss",
     "_pagination.scss",
+    "_pager.scss",
     "_tables.scss",
     "_tabs_bottom.scss",
     "_visibility_by_class.scss"
