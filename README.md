@@ -199,6 +199,30 @@ Add `.tabs-bottom` at your tabs, and define tab-nav after tab-content
 
 ---
 
+## Tooltips without javascript
+
+Displays tooltips on link or span without javascript. You choose between top or bottom position.
+
+### Installation
+
+Import `_tooltips.scss` file
+
+### Usage
+
+Add `gumby-tooltip` or `gumby-tooltip-bottom` attributs to display tooltip on top or bottom.
+
+### Configuration
+
+* $tooltip-background
+* $tooltip-color
+
+### Example
+
+    <a href="#" gumby-tooltip="What you want">Link</a>
+    <span gumby-tooltip-bottom="Others things">A text</span>
+
+---
+
 ## Visibility by class
 
 When you want to define visibility directly in html, instant of use *@mixin hidden() and visible()*
