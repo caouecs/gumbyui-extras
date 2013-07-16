@@ -1,0 +1,23 @@
+{
+    "name": "caouecs/gumbyui-extras",
+    "description": "UI modules for Gumby Framework",
+    "keywords": ["gumby2", "ui", "extras"],
+    "homepage": "https://github.com/caouecs/gumbyui-extras",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "caouecs",
+            "email": "caouecs@caouecs.net",
+            "role": "Developer",
+            "homepage": "https://github.com/caouecs"
+        }
+    ],
+    "support": {
+    	"email": "caouecs@caouecs.net",
+    	"issues": "https://github.com/caouecs/gumbyui-extras/issues",
+    	"source": "https://github.com/caouecs/gumbyui-extras"
+    },
+    "require": {
+        "gumbyframework/gumby": "2.4.x"
+    }
+}
