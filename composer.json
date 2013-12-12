@@ -18,6 +18,6 @@
     	"source": "https://github.com/caouecs/gumbyui-extras"
     },
     "require": {
-        "gumbyframework/gumby": "2.4.x"
+        "gumbyframework/gumby": "2.5.x"
     }
 }
